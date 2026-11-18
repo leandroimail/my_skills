@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: reescrita-runbook-estrito
+expected_outcome: |
+  O runbook reescrito em nível estrito: passos numerados no imperativo, aviso de segurança antes do passo perigoso, condição abrindo a frase, comandos e YAML intactos, nenhuma ação removida ou inventada, pontos vagos marcados como a confirmar.
+context:
+  scaffold_script: place-files.sh

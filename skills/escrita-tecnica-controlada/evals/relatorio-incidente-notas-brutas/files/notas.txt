@@ -1,0 +1,13 @@
+anotações incidente api-autorizacao - 12/11/2026
+
+14:02 alerta HighErrorRate disparou no alertmanager. a api caiu pra geral, guia de autorização não passava
+14:05 plantão (Renata) começou a olhar
+14:11 viu no log vários timeouts de conexão com o banco, linha que mais aparecia:
+   ERR_POOL_EXHAUSTED: max_connections=50
+14:20 a gente achou que era o deploy das 13:40 (versão 4.18.0), que subiu um job novo de reprocessamento de guias. provavelmente o job novo abre conexão e não devolve pro pool, mas ninguém conseguiu reproduzir em homologação ainda
+14:38 Renata rodou o rollback:
+   kubectl rollout undo deployment/api-autorizacao -n prod
+14:47 taxa de erro voltou ao normal (abaixo de 0.5%). no pico tava em 38.2%
+impacto: painel "Autorizações - Produção" mostra 1243 beneficiários com guia negada por erro técnico no período. não teve perda de dado até onde a gente viu, mas não conferimos a fila de reprocessamento
+o alerta demorou, o erro começou antes das 14:02 com certeza mas não sei quando exatamente
+pendente: alguém precisa aumentar o pool ou arrumar o job. também seria bom ter alerta de pool. a versão 4.18.0 tá bloqueada até resolver

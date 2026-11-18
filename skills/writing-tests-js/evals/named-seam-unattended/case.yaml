@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: named-seam-unattended
+expected_outcome: |
+  Test files for calculateShipping are written without waiting for the user. The final message states the seam under test. Expected values are literals worked out from the rules, and the thresholds are covered.
+context:
+  scaffold_script: place-files.sh

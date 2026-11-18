@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: ideation-few-viable-directions
+expected_outcome: |
+  Works in ideation mode, presents only directions that respect every stated constraint, says what was dropped and why, and does not pad the list.

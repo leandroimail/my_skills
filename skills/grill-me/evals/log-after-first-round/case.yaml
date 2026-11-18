@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: log-after-first-round
+expected_outcome: |
+  Writes the log now with the decisions from the first round, does not re-ask them, and follows up on what the answer to Q1 changes.

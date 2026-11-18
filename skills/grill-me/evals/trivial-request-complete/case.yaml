@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trivial-request-complete
+expected_outcome: |
+  Recognizes the request is complete, says so, and does not invent interview questions.

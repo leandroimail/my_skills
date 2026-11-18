@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: persuade-landing-open-brief
+expected_outcome: |
+  Uma landing page em index.html com direção visual própria para o assunto (não um dos looks padrão), hero que funciona como tese, ação de agendar clara e piso de acessibilidade atendido.

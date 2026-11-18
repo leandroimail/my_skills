@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: relatorio-incidente-notas-brutas
+expected_outcome: |
+  Um relatório de incidente em pt-BR que abre com resumo e conclusão, mantém a causa como provável (não confirmada), usa datas ISO, preserva comando e linha de log, informa os números das notas e marca como lacuna o que as notas não informam.
+context:
+  scaffold_script: place-files.sh

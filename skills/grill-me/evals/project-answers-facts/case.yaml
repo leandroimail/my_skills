@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: project-answers-facts
+expected_outcome: |
+  States facts found in the code and ADR with their source instead of asking them, raises the README-versus-code conflict about partial cancellation, points out that the ADR forbids synchronous e-mail, and asks only intent, risk, or hard-to-reverse questions.

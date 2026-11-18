@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: resumo-pr-bilingue
+expected_outcome: |
+  Um arquivo pr.md com a descrição do PR em pt-BR e em inglês, com a mesma estrutura e os mesmos fatos, formatos numéricos de cada língua, a falha de teste relatada e a causa dela mantida como hipótese.

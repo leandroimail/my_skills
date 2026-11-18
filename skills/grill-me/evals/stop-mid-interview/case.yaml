@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: stop-mid-interview
+expected_outcome: |
+  Stops asking, records the two answers as decisions, marks what was not answered as open or as unconfirmed calls, writes the log, and says it will proceed.

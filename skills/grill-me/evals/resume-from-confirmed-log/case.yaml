@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: resume-from-confirmed-log
+expected_outcome: |
+  Finds the confirmed log, does not ask the confirmed decisions again, presents the two unconfirmed calls again, and treats the missing refund code as pending work rather than a conflict.
+context:
+  scaffold_script: place-files.sh

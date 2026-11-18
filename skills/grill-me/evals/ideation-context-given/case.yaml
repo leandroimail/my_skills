@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: ideation-context-given
+expected_outcome: |
+  Announces ideation mode, does not ask why again, and goes to generating ideas because the why, constraints, and prior attempts were already given.

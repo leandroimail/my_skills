@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: no-argument-no-topic
+expected_outcome: |
+  Asks exactly one open question about what to grill or brainstorm, before reading anything.
