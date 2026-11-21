@@ -35,6 +35,7 @@ CLI's anonymous telemetry.
 | `generating-commit-messages` | Conventional Commits messages |
 | `creating-pull-requests` | Stacked, reviewable PR workflow |
 | `task-planning-execution` | Spec-driven planning with a durable `.plan/` |
+| `writing-prompt-contracts` | Writes verifiable prompt contracts that an agent executes on its own |
 | `frontend-design` | Intentional visual design for UI work |
 | `jupyter-notebook` | Notebook scaffolding and editing |
 | `playwright-cli` | Browser automation and Playwright tests from the terminal |

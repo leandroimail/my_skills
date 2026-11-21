@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: tela-nextjs-critico-visual
+expected_outcome: |
+  A prompt contract saved under .prompts/ for rebuilding the screen. The verification takes
+  Playwright screenshots at fixed widths 1440 and 390 and gives a visual critic only the
+  reference PNG, the requirements and the screenshots (evidence folder), never the code,
+  returning defects by severity until nothing above minor remains. It uses npm run test:e2e
+  as a gate, fences off the API and the shared design-system components, marks unknown repo
+  paths and details as [a confirmar] instead of inventing them, and has a failing-gate rule
+  and a done-when evidence list.

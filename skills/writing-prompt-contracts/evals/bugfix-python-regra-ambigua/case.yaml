@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: bugfix-python-regra-ambigua
+expected_outcome: |
+  A prompt contract saved under .prompts/ in the repository for fixing the duplicated rows.
+  The verification makes a reproduction test (beneficiary with two active plans) fail before
+  the fix and pass after, using the repo's real commands (make test / pytest). The expected
+  business behavior for a beneficiary with two active plans is NOT invented: it is marked
+  [a confirmar] (one row per beneficiary or per plan, and which amount). The fence protects
+  the CSV column order consumed by finance. It has an isolated reviewer, a failing-gate rule
+  and a done-when evidence list, and does not fix the bug itself.
+context:
+  scaffold_script: place-files.sh

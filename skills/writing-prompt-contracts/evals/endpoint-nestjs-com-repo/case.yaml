@@ -1,0 +1,13 @@
+schema_version: "1.1"
+name: endpoint-nestjs-com-repo
+expected_outcome: |
+  A prompt contract saved under .prompts/ in the repository. It reads the repo first and
+  cites the existing prestadores module as the pattern and the real scripts (npm test,
+  npm run test:e2e) as gates. It covers goal with scope cut, ordered priorities, context,
+  constraints with reasons (no schema change, read-only), targets, observable requirements
+  with error cases, interface, verification with fixed scenarios and an isolated reviewer
+  that only sees requirements, interface and an evidence folder, a failing-gate rule, and
+  a done-when evidence list. Values the user did not give (latency, load, slot rules) are
+  marked [a confirmar] instead of being invented. It does not implement the endpoint.
+context:
+  scaffold_script: place-files.sh
